@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <h1>Heading1-BigBoy<h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6-LastBorn</h6>
+
+    <header>
+        Hi👋
+        <h1>Header is Heading Up!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">contact</a>
+
+        </nav>
+
+    </header>
+    <!-- Commonly Used for - Logo, Tagline, navigation menu-->
+
+    <p>Bro..</p>
+    <p>Again Bro</p>
+    <p>What's this bro ?</p>
+    <!-- Takes Extra Space Back and forth vertically(Margins) -->
+
+    <nav>Come on</nav>
+    <nav>You're not same bro..</nav>
+    <!-- Used specifically for Menus, Slidebars and navigation bars -->
+
+    <div>What about You ?</div>
+    <div>Have we meet each other?</div>
+    <!-- Generally used for Grouping, Styling and wrapping Elements(Commonly Called as Containers), Without any Spacing(Margins) and Acts like a Block(No Semantic) -->
+
+    <span></span>
+    <p>Hi, Here You can see the <span style="color: deeppink;">Transfromation</span> with the help of my friend Span</p>
+    <!-- Non-Semantic, Considered as Inline Container.. So, It is used to manipulate a line alone -->
+    <!-- Using which the css property or JS can be injected to a targetted Inline Stuff -->
+
+    <!-- src Vs srcset -->
+    <img 
+    src="images/htmlstructre.png" 
+    srcset="images/htmlstructre.png 600w, images/htmlstructre.png 900w"
+    sizes="(max-width:600px) 100vw, (max-width: 900px) 50vw"
+    alt="Responsive Image">
+
+    <!-- src- Fallback Image(Tells browser to load a fixed image) -->
+    <!-- srcset- Responsive Image(Gives multiple image options based on screen resolution and screen size) -->
+
+    <img src="images/htmlstructre.png" alt="html structure myt friend">
+    <img src="https://th.bing.com/th/id/OIP.RX3UD_3Z2L7m1h59QPrc1QHaHa?w=182&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Just a load from internet link address">
+
+    <img src="images/markdown.jpg" alt="just load it" loading="lazy">
+    <!-- Lazy Loading -Let the browser made opt for performance and load the required stuffs when it is need to displayed -->
+
+    <picture>
+        <source srcset="image.webp" type="image/webp">
+        <source srcset="image.acif" type="image/avif">
+        <img src="image.jpg" alt="Browser chooses it's best">
+
+    </picture>
+    <!-- Only can be used only if we've multiple formats of same image, and mentioned there and let the user's browser decides to load the optimized format for the device -->
+    <!-- Used for responsive images, allows brower to choose the best image based on screen size -->
+    <!-- Used for Hero banners, product images, or any image that should be optimized by screen or format -->
+
+    <audio controls>
+        <source src="audios/netflix.mp3" type="audio/mpeg">
+        Your Browser Does not support the audio Element
+    </audio>
+
+    <video width="640" height="360" autoplay muted>
+        <source src="videos/vkdoc.mp4" type="video/mp4">
+        Your Browser Does not Support with the format
+    </video>
+    <!-- controls are used to give access to user to pause/play, volume, timeline and fullscreen(video) -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676729.0792155956!2d-0.27325934633180954!3d51.29076662716634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1750537797731!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LKjkgJGpEYw?si=E9bYgiLOqyF2CUw6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe 
+    src="https://www.google.co.in/maps/place/London,+UK/@51.5286416,-0.1015987,11z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" 
+  
+    frameborder="0"
+    
+    width="560"
+    height="320"
+    allowfullscreen
+    ></iframe>
+    <!-- iframe allow us to incoperate other sites into our website, most useful on times of integrating maps on our site-->
+
+    <!-- embed vs object -->
+    <embed src="files/dsa.pdf" type="application/pdf" width="680" height="420">
+    <!-- Embeded files directly -->
+
+    <object data="files/dsa.pdf" type="application/pdf" width="560" height="240">
+        <p>Your browser does not support PDF formats
+        <a href="files/dsa.pdf">Deownload PDF</a></p>
+    </object>
+    <!-- Embed files with fallback(more control) -->
+
+    <main>
+        <section>
+            <article>
+                <h2>project 1</h2>
+                <a href="/project1">Project 1</a>
+            </article>
+
+            <article>
+                <h2>Project 2</h2>
+                <a href="/project2">project 2</a>
+            </article>
+        </section>
+
+    </main>
+    <main></main>
+    <!-- Can be One at a Page, It is the Semantic Backbone of HTML5, Primarily It tells Browers, Search engines and Screen readers that IT'S THE PRIMARY CONTENT OF THE PAGE -->
+    <!-- Sections & Articles can be used insde it -->
+
+    <section>
+        <h2>Heading2</h2>
+        <article>
+            <h3>Book</h3>
+            <p>The Analects</p>
+
+        </article>
+
+        <article>
+            <h3>Description</h3>
+            <p>Sorry, I haven't read yet!</p>
+
+        </article>
+    </section>
+    <!-- 
+    Ideal for..
+    eg. (Books Section)
+    <section> 
+    ├── <article> (Book 1 - Can be its own blog post)
+    ├── <article> (Book 2 - Can also stand alone)
+    </section>
+    *Best & Optimized too(For blogs, Reviews, Reusable Content and posts)..
+    -->
+
+    <section>
+    <section>
+        <h3>Book</h3> 
+        <p>The Analects</p>   
+    </section>
+
+    <section>
+        <h3>Any Question?</h3>
+        <p>I know, You know very well about me!</p>
+    </section>
+    
+    </section>
+    <!-- 
+    Ideal for..
+    <section> 
+    ├── <section> (Author Info)
+    ├── <section> (Quotes)
+    ├── <section> (My Review)
+    </section>
+    *Both may looks same but internally works diff, Can be used for SubSection of main topic & But content is not tied to the parent Topic
+    -->
+
+    <section></section>
+    <!-- Used for Grouping related content like Chapters & Categories(Which means the content inside SECTION is about one common topic, purpose or funtion) -->
+
+    <article>
+        <h3>Hi again on Standalone Article</h3>
+        <p>Let see, what it can do?</p>
+    </article>
+
+    <article></article>
+    <!-- Independent & Reusable Content, It can be Standlone and Mainly used for represent a semantic of blog posts, Comments and news -->
+
+    <aside>
+        <article>
+            <h3>Helloo!!</h3>
+            <p>You can't ignore me!!</p>
+        </article>
+
+    </aside>
+
+    <aside></aside>
+    <!-- Used as Sidebar, Ads section, and support the content.. An Optional one  -->
+
+    <footer>Bye
+        <p>&copy; 2025 Just a Try. All rights reserved </p>
+        <a href="/privacy">privacy</a>
+    </footer>
+    <!-- Generally used for  Copy rights and other stuffs which indicates the website Ends here-->
+
+    <!-- Using Header & Footer Tags provides Semantic Representation to Brower & SEO Optimized -->
+
+    <canvas></canvas> 
+    <datalist></datalist>
+    <details></details>
+    <search></search>
+    <output></output>
+    <progress></progress>
+
+
+    <ul>
+        <li></li>
+        <li></li>
+
+    </ul>
+
+    <ol>
+        <li></li>
+        <li></li>
+
+    </ol>
+
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
